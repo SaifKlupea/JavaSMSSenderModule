@@ -34,3 +34,95 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@SaifKlupea 
+@chhh
+chhh/.gitignore
+Last active 3 months ago • Report abuse
+44
+31
+ Code
+ Revisions 3
+ Stars 44
+ Forks 31
+<script src="https://gist.github.com/chhh/4961200.js"></script>
+.gitignore file for IDEA, Eclipse, NetBeans
+.gitignore
+#
+# Project specific excludes
+#
+
+tomcat
+
+#
+# Default excludes
+#
+
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+
+# Maven 
+target/
+
+# IntelliJ project files 
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+
+# OS
+.DS_Store
+
+# Misc
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+@SaifKlupea
+ 
+Leave a comment
+Aucun fichier choisi
+Attach files by dragging & dropping, selecting or pasting them.
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

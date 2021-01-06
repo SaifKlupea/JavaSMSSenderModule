@@ -35,24 +35,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-Skip to content
- 
-Search…
-All gists
-Back to GitHub
-@SaifKlupea 
-@chhh
-chhh/.gitignore
-Last active 3 months ago • Report abuse
-44
-31
- Code
- Revisions 3
- Stars 44
- Forks 31
-<script src="https://gist.github.com/chhh/4961200.js"></script>
-.gitignore file for IDEA, Eclipse, NetBeans
-.gitignore
+
 #
 # Project specific excludes
 #
@@ -112,3 +95,4 @@ pom.xml.tag
 
 #xml config file (containing token and acc_id)
 src/main/resources/sms.config.xml
+*.sms.config.xml

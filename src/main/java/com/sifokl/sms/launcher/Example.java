@@ -35,7 +35,7 @@ public class Example{
         Message message = Message.creator(
                 new PhoneNumber(conf.getTO_NUMBER()),
                 new PhoneNumber(conf.getTRIAL_NUMBER()),
-                "Hello , your example test message is sent now "+new Date())
+                "Hello , your example test message is sent now "+new Date()+" from CONFIG : "+conf.getConfigType())
            .create();
 
 

@@ -10,6 +10,7 @@ public abstract class Config {
     protected  String AUTH_TOKEN ;
     protected  String TRIAL_NUMBER;
     protected  String TO_NUMBER ;
+
     protected  ConfigEnumType configType;
 
 
@@ -64,6 +65,11 @@ public abstract class Config {
 
     public void setConfType(ConfigEnumType type) {
         this.configType = type;
+    }
+
+
+    public ConfigEnumType getConfigType() {
+        return configType;
     }
 
 

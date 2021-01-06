@@ -97,3 +97,4 @@ pom.xml.tag
 src/main/resources/sms.config.xml
 **sms.config.xml
 !**/src/main/resources/sms.config.xml
+*.xml

@@ -95,4 +95,4 @@ pom.xml.tag
 
 #xml config file (containing token and acc_id)
 src/main/resources/sms.config.xml
-*sms.config.xml
+**sms.config.xml

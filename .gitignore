@@ -109,20 +109,6 @@ nb-configuration.xml
 release.properties
 pom.xml.releaseBackup
 pom.xml.tag
-@SaifKlupea
- 
-Leave a comment
-Aucun fichier choisi
-Attach files by dragging & dropping, selecting or pasting them.
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+#xml config file (containing token and acc_id)
+src/main/resources/sms.config.xml

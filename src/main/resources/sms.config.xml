@@ -1,6 +1,6 @@
 <configXML>
-    <ACCOUNT_SID>empty</ACCOUNT_SID>
-    <AUTH_TOKEN>empty</AUTH_TOKEN>
-    <TRIAL_NUMBER>+16025985886</TRIAL_NUMBER>
-    <TO_NUMBER>+33605910265</TO_NUMBER>
+    <ACCOUNT_SID>put your own acc_sid</ACCOUNT_SID>
+    <AUTH_TOKEN>put your own auth_token</AUTH_TOKEN>
+    <TRIAL_NUMBER>put your trial twilio number</TRIAL_NUMBER>
+    <TO_NUMBER>put the number you want to use</TO_NUMBER>
 </configXML>

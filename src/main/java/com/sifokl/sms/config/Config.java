@@ -1,9 +1,10 @@
 package com.sifokl.sms.config;
 
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.*;
 
+
+@XmlTransient
 public abstract class Config {
-
 
 
     protected  String ACCOUNT_SID ;
@@ -31,7 +32,7 @@ public abstract class Config {
         return ACCOUNT_SID;
     }
 
-    @XmlElement
+
     public void setACCOUNT_SID(String ACCOUNT_SID) {
         this.ACCOUNT_SID = ACCOUNT_SID;
     }
@@ -40,7 +41,6 @@ public abstract class Config {
         return AUTH_TOKEN;
     }
 
-    @XmlElement
     public void setAUTH_TOKEN(String AUTH_TOKEN) {
         this.AUTH_TOKEN = AUTH_TOKEN;
     }
@@ -49,7 +49,6 @@ public abstract class Config {
         return TRIAL_NUMBER;
     }
 
-    @XmlElement
     public void setTRIAL_NUMBER(String TRIAL_NUMBER) {
         this.TRIAL_NUMBER = TRIAL_NUMBER;
     }
@@ -58,7 +57,6 @@ public abstract class Config {
         return TO_NUMBER;
     }
 
-    @XmlElement
     public void setTO_NUMBER(String TO_NUMBER) {
         this.TO_NUMBER = TO_NUMBER;
     }

@@ -18,5 +18,22 @@ public class StringUtils {
         return encodedString;
     }
 
+    /**
+     * @param str input string
+     * @param size size of final string (complete with blank)
+     * @param strictMode if input string size > param size , trunc input string if true
+     * @return string completed with blank until the final size reaches input size
+     */
+    public static String completeStringWithBlank(String str , int size , boolean strictMode){
+
+        StringBuffer strBuff = new StringBuffer(size);
+        strBuff.append(str);
+        for(int i = str.length() ; i < size ; i++){
+            strBuff.append(" ");
+        }
+        if(strictMode) return strBuff.substring(0,size);
+        return strBuff.toString();
+    }
+
 
 }

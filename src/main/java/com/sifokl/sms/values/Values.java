@@ -11,4 +11,8 @@ public class Values {
     public static final String DEFAULT_CONFIG_SMS_FILE_NAME = "sms.config.xml";
 
 
+    public final static int     CONFIG_MAX_LENGTH_CLASS_LOG = 50;
+    public final static int     CONFIG_MAX_LENGTH_METHOD_LOG = 30;
+
+
 }

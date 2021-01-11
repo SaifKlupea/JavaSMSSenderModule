@@ -1,6 +1,7 @@
 package com.sifokl.sms.util;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -13,14 +14,17 @@ public class FileUtils {
     private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 
-    public static String getFileAsResource(String fileName) {
+    public static String getFileAsResource(String fileName) throws FileNotFoundException {
         logger.info("*** FUNCTION START ***");
 
         //"src/main/resources/sms.config.xml"
 
         URL url = Thread.currentThread().getContextClassLoader().getResource( fileName );
-        if( null == url ){
-            throw new RuntimeException( "Cannot find resource on classpath: '" + fileName + "'" );
+        if( null == url ) {
+            String message = "The file "+fileName+" is not a resource or does not exist";
+            logger.warning(message);
+            throw new FileNotFoundException(message);
+
         }
         String result = url.getFile();
 

@@ -8,7 +8,8 @@ public class Values {
     public static final String KEY_TO_NUMBER = "TWILIO_TO_NUMBER";
 
 
-    public static final String DEFAULT_CONFIG_SMS_FILE_NAME = "sms.config.xml";
+    public static final String DEFAULT_CONFIG_SMS_FILE_NAME_XML = "sms.config.xml";
+    public static final String DEFAULT_CONFIG_SMS_FILE_NAME_JSON = "sms.config.json";
 
 
     public final static int     CONFIG_MAX_LENGTH_CLASS_LOG = 50;

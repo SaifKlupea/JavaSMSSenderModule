@@ -24,6 +24,7 @@ public class ConfigTypeFactory {
 
             }
 
+
             if(type.equals(ConfigEnumType.JSON)){
 
                 logger.info("Trying to load config with "+type);
@@ -49,6 +50,8 @@ public class ConfigTypeFactory {
                 }
 
             }
+
+
 
 
         }

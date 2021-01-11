@@ -1,5 +1,7 @@
 package com.sifokl.sms.config;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.*;
 
 
@@ -7,9 +9,13 @@ import javax.xml.bind.annotation.*;
 public abstract class Config {
 
 
+    @JsonProperty("ACCOUNT_SID")
     protected  String ACCOUNT_SID ;
+    @JsonProperty("AUTH_TOKEN")
     protected  String AUTH_TOKEN ;
+    @JsonProperty("TRIAL_NUMBER")
     protected  String TRIAL_NUMBER;
+    @JsonProperty("TO_NUMBER")
     protected  String TO_NUMBER ;
 
     protected  ConfigEnumType configType;

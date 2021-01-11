@@ -8,7 +8,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
-import java.net.URL;
+import java.io.FileNotFoundException;
 import java.util.logging.Logger;
 
 @XmlRootElement(name = "config")
@@ -20,7 +20,7 @@ public class ConfigXML extends Config{
     @Override
     public void load() {
         logger.info("*** START load() ***");
-        load(Values.DEFAULT_CONFIG_SMS_FILE_NAME);
+        load(Values.DEFAULT_CONFIG_SMS_FILE_NAME_XML);
         logger.info("*** END load() ***");
     }
 
@@ -28,6 +28,7 @@ public class ConfigXML extends Config{
     public void load(String fileName) {
         logger.info("*** END ***");
         Config conf = xmlToConfig(fileName);
+
 
         this.ACCOUNT_SID = conf.getACCOUNT_SID();
         this.AUTH_TOKEN = conf.getAUTH_TOKEN();
@@ -39,8 +40,8 @@ public class ConfigXML extends Config{
 
 
     private Config xmlToConfig(String fileName){
-
-        ConfigXML conf ;
+        logger.info("*** START ***");
+        Config conf = null;
 
         try {
 
@@ -52,14 +53,14 @@ public class ConfigXML extends Config{
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             conf = (ConfigXML) jaxbUnmarshaller.unmarshal(file);
-            return conf;
 
-
-        } catch (JAXBException e) {
-            e.printStackTrace();
+        } catch (JAXBException | FileNotFoundException e) {
+            //e.printStackTrace();
+            Config nullAttributesConfig = new ConfigXML();
+            return nullAttributesConfig;
         }
-
-        return null;
+        logger.info("*** END ***");
+        return conf;
 
     }
 

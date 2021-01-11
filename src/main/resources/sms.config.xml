@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <config>
-    <ACCOUNT_SID>AC0eb734a76b7c83985da634c094be56f0</ACCOUNT_SID>
-    <AUTH_TOKEN>a150f23c25c07e984078c7da2f094734</AUTH_TOKEN>
-    <TRIAL_NUMBER>+16025985886</TRIAL_NUMBER>
-    <TO_NUMBER>+33605910265</TO_NUMBER>
+    <ACCOUNT_SID>example</ACCOUNT_SID>
+    <AUTH_TOKEN>example</AUTH_TOKEN>
+    <TRIAL_NUMBER>example</TRIAL_NUMBER>
+    <TO_NUMBER>example</TO_NUMBER>
 </config>

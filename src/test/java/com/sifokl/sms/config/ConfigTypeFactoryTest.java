@@ -66,6 +66,7 @@ public class ConfigTypeFactoryTest {
 
     @BeforeEach
     void init() {
+        log.info("\n-----------------------------------------------\n");
 
         log.info("@BeforeEach - executes before each test method in this class");
         log.info("verify that all config tests files exist and have the initial names (could be changed during tests in purpose");
@@ -76,6 +77,7 @@ public class ConfigTypeFactoryTest {
 
     @AfterEach
     void afterEach(){
+
         log.info("@AfterEach - executes after each test method in this class");
         log.info("verify that all config tests files exist and have the initial names (could be changed during tests in purpose");
 
@@ -85,6 +87,8 @@ public class ConfigTypeFactoryTest {
             renameFiles(RENAMED_JSON_DEFAULT_CONFIG_PATH_FILE, JSON_DEFAULT_CONFIG_PATH_FILE);
 
         assertFilesExists(files);
+
+        log.info("\n-----------------------------------------------\n");
     }
 
 

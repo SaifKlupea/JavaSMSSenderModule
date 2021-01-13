@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+    <ACCOUNT_SID>val 1</ACCOUNT_SID>
+    <AUTH_TOKEN>val 2</AUTH_TOKEN>
+    <TRIAL_NUMBER>val 3</TRIAL_NUMBER>
+    <TO_NUMBER>val 4</TO_NUMBER>
+</config>

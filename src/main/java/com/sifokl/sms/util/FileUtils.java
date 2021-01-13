@@ -37,7 +37,37 @@ public class FileUtils {
         logger.info("*** FUNCTION START ***");
         File f = new File(path);
         boolean result = (f.exists() && !f.isDirectory());
-        logger.info(path+" is directory ? "+result);
+        logger.info(path+" exists as file  ? "+result);
+        logger.info("*** FUNCTION END ***");
+        return result ;
+    }
+
+    public static boolean renameFile(String oldPath , String newName) throws IOException{
+
+        logger.info("*** FUNCTION START ***");
+        logger.info("ARGUMENTS : arg1 : oldPath = "+oldPath+" and arg2 : newName = "+newName);
+        boolean result = true;
+
+        Path source = Paths.get(oldPath);
+        Path destination = Paths.get(newName);
+        //if newName is Path , IT MUST BE the same path , it has to be changed to a file name (without parent directory)
+        String newFileName = destination.getFileName().toString();
+
+        logger.info("source : "+source.toString());
+        logger.info("destination : "+destination.toString());
+        logger.info("path : "+source.getParent());
+        logger.info("renamed file without path : "+newFileName);
+
+        try{
+            // rename a file in the same directory
+            Files.move(source, source.resolveSibling(newFileName));
+
+        } catch (IOException e) {
+            result = false;
+            throw e;
+        }
+
+        logger.info(oldPath+" is reamed to  "+newFileName+" ? "+result);
         logger.info("*** FUNCTION END ***");
         return result ;
     }

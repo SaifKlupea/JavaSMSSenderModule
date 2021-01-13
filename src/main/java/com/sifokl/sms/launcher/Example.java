@@ -33,12 +33,6 @@ public class Example{
 
         Config conf = optConf.get();
         logger.info(conf.toString());
-/*
-        logger.info("Credentials (truncated BASE64): ");
-        logger.info("ACCOUNT_SID : "+ StringUtils.truncate(StringUtils.toBase64(conf.getACCOUNT_SID()),7));
-        logger.info("AUTH_TOKEN : "+StringUtils.truncate(StringUtils.toBase64(conf.getAUTH_TOKEN()),7));
-        logger.info("TRIAl_NUMBER : "+conf.getTRIAL_NUMBER());
-*/
 
         Twilio.init(conf.getACCOUNT_SID(), conf.getAUTH_TOKEN());
 
